@@ -20,7 +20,7 @@ public class WebClientConfig {
 
 
         return WebClient.builder()
-            .baseUrl("http://localhost:8081/faker")
+            .baseUrl("http://localhost:8081/best")
             .clientConnector(new ReactorClientHttpConnector(client))
             .defaultHeader(CONTENT_TYPE, APPLICATION_JSON_VALUE)
             .build();

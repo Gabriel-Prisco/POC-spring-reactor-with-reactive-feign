@@ -1,8 +1,7 @@
 package com.valemobi.pocspringreactorwithreactivefeign.adapter.controllers;
 
-import com.github.javafaker.Avatar;
 import com.valemobi.pocspringreactorwithreactivefeign.usecase.faker.FakerUseCase;
-import com.valemobi.pocspringreactorwithreactivefeign.usecase.faker.io.ProductsOutput;
+import com.valemobi.pocspringreactorwithreactivefeign.usecase.faker.io.Rapper;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,9 +18,9 @@ public class FakerController {
         this.useCase = useCase;
     }
 
-    @GetMapping("/avatar")
-    public Mono<Avatar> getAvatar() {
-        return useCase.getAvatar();
+    @GetMapping("/products")
+    public Mono<Rapper> getRapper() {
+        return useCase.getRapper();
     }
 
 
